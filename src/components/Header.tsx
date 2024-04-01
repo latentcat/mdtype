@@ -3,6 +3,7 @@
 import {ArticleSelector} from "@/components/ArticleSelector";
 import {MenubarDemo} from "@/components/Menubar";
 import {HeaderToolbar} from "@/components/HeaderToolbar";
+import {DarkModeToggle} from "@/components/DarkModeToggle";
 
 
 export function Header() {
@@ -12,7 +13,8 @@ export function Header() {
         <ArticleSelector />
         <MenubarDemo />
       </div>
-      <div>
+      <div className="flex items-center gap-4">
+        <DarkModeToggle />
         <HeaderToolbar />
       </div>
     </div>
