@@ -9,9 +9,9 @@ const tags = Array.from({ length: 50 }).map(
 
 export function PreviewView() {
   return (
+    <ScrollArea className="h-full w-full">
     <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
-      <div className="w-full h-full rounded-xl _shadow-xl bg-background border max-w-md">
-        <ScrollArea className="h-full w-full">
+      <div className="w-full h-full rounded-xl _shadow-xl bg-background _border max-w-md">
           <div className="p-5">
             <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
             {tags.map((tag) => (
@@ -23,8 +23,8 @@ export function PreviewView() {
               </>
             ))}
           </div>
-        </ScrollArea>
       </div>
     </div>
+    </ScrollArea>
   )
 }
