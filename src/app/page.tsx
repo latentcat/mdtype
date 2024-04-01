@@ -15,7 +15,7 @@ export default function Home() {
           <Content/>
         </div>
       </div>
-      <div className="border-t">
+      <div className="border-t bg-border">
         <Footer />
       </div>
     </main>
