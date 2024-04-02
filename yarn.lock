@@ -70,6 +70,17 @@
     "@lezer/common" "^1.0.2"
     "@lezer/css" "^1.0.0"
 
+"@codemirror/lang-css@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@codemirror/lang-css/-/lang-css-6.2.1.tgz#5dc0a43b8e3c31f6af7aabd55ff07fe9aef2a227"
+  integrity sha512-/UNWDNV5Viwi/1lpr/dIXJNWiwDxpw13I4pTUAsNxZdg6E0mI2kTQb0P2iHczg1Tu+H4EBgJR+hYhKiHKko7qg==
+  dependencies:
+    "@codemirror/autocomplete" "^6.0.0"
+    "@codemirror/language" "^6.0.0"
+    "@codemirror/state" "^6.0.0"
+    "@lezer/common" "^1.0.2"
+    "@lezer/css" "^1.0.0"
+
 "@codemirror/lang-html@^6.0.0":
   version "6.4.8"
   resolved "https://registry.npmmirror.com/@codemirror/lang-html/-/lang-html-6.4.8.tgz#961db9b1037efcb1d0f50ae6082e5a367fa1470c"

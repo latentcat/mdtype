@@ -4,6 +4,7 @@ import { createEditorState, createEditorView } from "@/lib/codemirror";
 import { cssAtom } from "@/lib/store/editor";
 import { useSetAtom } from "jotai";
 import { useEffect, useRef } from "react";
+import { css } from "@codemirror/lang-css";
 
 export function CSSView() {
   const editor = useRef<HTMLDivElement>(null);
@@ -11,7 +12,7 @@ export function CSSView() {
 
   useEffect(() => {
     const startState = createEditorState({
-      extensions: [],
+      extensions: [css()],
       onChange: setCss,
     });
 
