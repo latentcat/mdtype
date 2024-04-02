@@ -6,12 +6,25 @@ import {
 import { PreviewView } from "@/components/PreviewView";
 import { MarkdownView } from "@/components/MarkdownView";
 import * as React from "react";
-import { CSSView } from "./CSSView";
+import {CSSView} from "@/components/CSSVIew";
 
-function PanelWrapper({ children }: { children: React.ReactNode }) {
+function PanelWrapper({
+  children,
+  title,
+}: {
+  children: React.ReactNode,
+  title: string
+}) {
   return (
     <div className="absolute top-0 left-0 w-full h-full px-[2px]">
-      <div className="w-full h-full bg-panel-bg rounded-lg">{children}</div>
+      <div className="w-full h-full bg-panel-bg rounded-lg">
+        <div className="p-1 flex items-center justify-center">
+          <div className="text-xs text-foreground/50">
+            {title}
+          </div>
+        </div>
+        {children}
+      </div>
     </div>
   );
 }
@@ -20,19 +33,19 @@ export default function Content() {
   return (
     <ResizablePanelGroup direction="horizontal" className="h-full">
       <ResizablePanel className="relative">
-        <PanelWrapper>
+        <PanelWrapper title="Markdown">
           <MarkdownView />
         </PanelWrapper>
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper>
+        <PanelWrapper title="CSS">
           <CSSView />
         </PanelWrapper>
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper>
+        <PanelWrapper title="HTML">
           <PreviewView />
         </PanelWrapper>
       </ResizablePanel>

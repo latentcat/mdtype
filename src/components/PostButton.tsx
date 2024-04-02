@@ -46,10 +46,10 @@ export function PostButton() {
       <DropdownMenuTrigger asChild>
         <Button size="sm">
           <Share size={16} className="mr-1.5" />
-          发布
+          导出
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuLabel>复制到</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={() => copyHtml("text/html")}>
@@ -57,6 +57,12 @@ export function PostButton() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => copyHtml("text/plain")}>
           纯文本
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuLabel>储存为</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>
+          ZIP
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
