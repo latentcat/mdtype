@@ -21,6 +21,7 @@ export function createEditorState(options?: Partial<CreateEditorStateOptions>) {
     extensions: [
       keymap.of(defaultKeymap),
       minimalSetup,
+      EditorView.lineWrapping,
       EditorView.theme({
         ".cm-content": {
           padding: "24px",
