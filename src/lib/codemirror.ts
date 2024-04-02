@@ -6,6 +6,7 @@ import { minimalSetup } from "codemirror";
 interface CreateEditorStateOptions extends EditorStateConfig {
   onChange: (value: string) => void;
   extensions: readonly Extension[];
+  fontSize: string;
 }
 
 export function createEditorState(options?: Partial<CreateEditorStateOptions>) {
@@ -25,7 +26,8 @@ export function createEditorState(options?: Partial<CreateEditorStateOptions>) {
       EditorView.theme({
         ".cm-content": {
           padding: "24px",
-          fontSize: "15px",
+          fontSize: options?.fontSize || "15px",
+          lineHeight: 1.7,
         },
         "&.cm-focused": { outline: "none" },
       }),

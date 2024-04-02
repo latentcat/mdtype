@@ -14,6 +14,7 @@ export function CSSView() {
     const startState = createEditorState({
       extensions: [css()],
       onChange: setCss,
+      fontSize: "14px",
     });
 
     if (editor.current) {
