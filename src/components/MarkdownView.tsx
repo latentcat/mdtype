@@ -25,6 +25,14 @@ export function MarkdownView() {
       doc: 'Hello World',
       extensions: [
         keymap.of(defaultKeymap),
+        markdown({codeLanguages: languages}),
+        EditorView.theme({
+          ".cm-content": {
+            padding: "24px",
+            fontSize: "16px",
+          },
+          "&.cm-focused .cm-content": {color: "orange"},
+        }),
       ],
     })
 
@@ -32,13 +40,10 @@ export function MarkdownView() {
       const view = new EditorView({
         state: startState,
         parent: editor.current,
-        extensions: [
-          markdown({codeLanguages: languages})
-        ]
       })
 
       view.dom.style.width = "100%";
-      view.dom.style.height = "100%";
+      view.dom.style.height = "100vh";
 
       return () => {
         view.destroy()
