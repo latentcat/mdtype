@@ -2,20 +2,18 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable"
-import {PreviewView} from "@/components/PreviewView";
-import {MarkdownView} from "@/components/MarkdownView";
+} from "@/components/ui/resizable";
+import { PreviewView } from "@/components/PreviewView";
+import { MarkdownView } from "@/components/MarkdownView";
 import * as React from "react";
-
+import ContentView from "./ContentView";
 
 function PanelWrapper({ children }: { children: React.ReactNode }) {
   return (
     <div className="absolute top-0 left-0 w-full h-full px-[2px]">
-      <div className="w-full h-full bg-panel-bg rounded-lg">
-        {children}
-      </div>
+      <div className="w-full h-full bg-panel-bg rounded-lg">{children}</div>
     </div>
-  )
+  );
 }
 
 export default function Content() {
@@ -29,7 +27,7 @@ export default function Content() {
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
         <PanelWrapper>
-          Two
+          <ContentView />
         </PanelWrapper>
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
@@ -39,5 +37,5 @@ export default function Content() {
         </PanelWrapper>
       </ResizablePanel>
     </ResizablePanelGroup>
-  )
+  );
 }
