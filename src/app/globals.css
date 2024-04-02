@@ -89,3 +89,19 @@ html {
   width: 100%;
   height: 100%;
 }
+
+#nice h1,
+#nice h2,
+#nice h3,
+#nice h4,
+#nice h5,
+#nice h6 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#nice * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+}

@@ -1,6 +1,6 @@
 # GFM
 
-![](https://my-wechat.mdnice.com/logo.svg)
+[//]: # (![]&#40;https://my-wechat.mdnice.com/logo.svg&#41;)
 
 请使用 **Chrome** 浏览器。
 
@@ -12,7 +12,7 @@
 - 支持微信公众号、知乎和稀土掘金
 - 欢迎扫码回复「排版」加入用户群
 
-![](https://my-wechat.mdnice.com/wechat.jpg)
+[//]: # (![]&#40;https://my-wechat.mdnice.com/wechat.jpg&#41;)
 
 ## 2 主题
 
