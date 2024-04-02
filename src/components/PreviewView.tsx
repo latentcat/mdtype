@@ -11,7 +11,7 @@ export function PreviewView() {
   const html = useAtomValue(htmlAtom);
   const css = useAtomValue(cssAtom);
   return (
-    <div className="h-full w-full overflow-y-auto">
+    <div className="h-full w-full overflow-y-auto overflow-x-hidden">
       <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
         <div className="w-full h-full _rounded-xl _shadow-xl _bg-background _border max-w-lg">
           <div ref={setPreviewWrapper} className="p-5">
