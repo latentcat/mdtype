@@ -1,30 +1,22 @@
-import * as React from "react"
+"use client";
 
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
+import * as React from "react";
 
-const tags = Array.from({ length: 50 }).map(
-  (_, i, a) => `v1.2.0-beta.${a.length - i}`
-)
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { useAtomValue } from "jotai";
+import { htmlAtom } from "@/lib/store/editor";
 
 export function PreviewView() {
+  const html = useAtomValue(htmlAtom);
   return (
     <ScrollArea className="h-full w-full">
-    <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
-      <div className="w-full h-full _rounded-xl _shadow-xl _bg-background _border max-w-md">
+      <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
+        <div className="w-full h-full _rounded-xl _shadow-xl _bg-background _border max-w-md">
           <div className="p-5">
-            <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
-            {tags.map((tag) => (
-              <>
-                <div key={tag} className="text-sm">
-                  {tag}
-                </div>
-                <Separator className="my-2 opacity-0" />
-              </>
-            ))}
+            <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
+        </div>
       </div>
-    </div>
     </ScrollArea>
-  )
+  );
 }
