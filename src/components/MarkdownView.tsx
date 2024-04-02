@@ -32,6 +32,7 @@ export function MarkdownView() {
             fontSize: "16px",
           },
           "&.cm-focused .cm-content": {color: "orange"},
+          "&.cm-focused": {outline: "none"},
         }),
       ],
     })
@@ -43,7 +44,7 @@ export function MarkdownView() {
       })
 
       view.dom.style.width = "100%";
-      view.dom.style.height = "100vh";
+      view.dom.style.height = "100%";
 
       return () => {
         view.destroy()
@@ -55,9 +56,7 @@ export function MarkdownView() {
 
 
   return (
-    <ScrollArea className="h-full w-full">
-      <div className="h-full" ref={editor}>
-      </div>
-    </ScrollArea>
+    <div className="h-full" ref={editor}>
+    </div>
   )
 }
