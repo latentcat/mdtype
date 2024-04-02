@@ -19,10 +19,10 @@ export function PostButton() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuLabel>平台</DropdownMenuLabel>
+        <DropdownMenuLabel>复制到</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>复制到微信公众平台</DropdownMenuItem>
-        <DropdownMenuItem>复制纯文本输入</DropdownMenuItem>
+        <DropdownMenuItem>微信公众平台</DropdownMenuItem>
+        <DropdownMenuItem>纯文本</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
