@@ -18,3 +18,5 @@ export const htmlAtom = atom(async (get) => {
     .process(get(markdownAtom));
   return file.toString();
 });
+
+export const previewWrapperAtom = atom<HTMLDivElement | null>(null);
