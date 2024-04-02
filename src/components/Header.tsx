@@ -4,6 +4,8 @@ import {ArticleSelector} from "@/components/ArticleSelector";
 import {MenubarDemo} from "@/components/Menubar";
 import {HeaderToolbar} from "@/components/HeaderToolbar";
 import {DarkModeToggle} from "@/components/DarkModeToggle";
+import {Button} from "@/components/ui/button";
+import {PostButton} from "@/components/PostButton";
 
 
 export function Header() {
@@ -16,6 +18,7 @@ export function Header() {
       <div className="flex items-center gap-4">
         <DarkModeToggle />
         <HeaderToolbar />
+        <PostButton />
       </div>
     </div>
   )
