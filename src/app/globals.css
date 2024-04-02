@@ -4,6 +4,10 @@
 
 @layer base {
   :root {
+
+    --editor-background: theme('colors.zinc.100');
+    --panel-background: theme('colors.white');
+
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -36,6 +40,9 @@
   }
 
   .dark {
+    --editor-background: theme('colors.black');
+    --panel-background: #191919;
+
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 

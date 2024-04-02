@@ -7,15 +7,15 @@ import {Footer} from "@/components/Footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="border-b shrink-0">
+      <div className="_border-b shrink-0">
         <Header/>
       </div>
       <div className="grow relative">
-        <div className="absolute w-full h-full top-0 left-0">
+        <div className="absolute w-full h-full top-0 left-0 px-[2px]">
           <Content/>
         </div>
       </div>
-      <div className="border-t bg-border">
+      <div className="_border-t _bg-border">
         <Footer />
       </div>
     </main>

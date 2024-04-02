@@ -11,7 +11,7 @@ export function PreviewView() {
   return (
     <ScrollArea className="h-full w-full">
     <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
-      <div className="w-full h-full rounded-xl _shadow-xl bg-background _border max-w-md">
+      <div className="w-full h-full _rounded-xl _shadow-xl _bg-background _border max-w-md">
           <div className="p-5">
             <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
             {tags.map((tag) => (
