@@ -1,21 +1,16 @@
 import {type Metadata, Viewport} from "next";
 
 export const layoutMetadata: Metadata = {
-  metadataBase: new URL('https://troyni.com'),
+  metadataBase: new URL('https://mdnice.latentcat.com'),
   title: {
-    template: '%s - Troy Ni',
+    template: '%s - mdnice',
     default:
-      'Troy Ni',
+      'mdnice',
   },
   description:
-    'Troy\'s website',
-  alternates: {
-    types: {
-      'application/rss+xml': `https://troyni.com/feed.xml`,
-    },
-  },
+    'mdnice',
   openGraph: {
-    title: 'Troy Ni',
+    title: 'mdnice',
     images: encodeURI(`/og?title=${'Troy Ni'}`)
   },
 }

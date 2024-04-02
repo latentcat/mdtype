@@ -53,11 +53,10 @@ export default async function Home() {
                         <Ellipsis size={20}/>
                       </Button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                    <DropdownMenuContent align="end">
+                      <DropdownMenuLabel>操作</DropdownMenuLabel>
                       <DropdownMenuSeparator />
-                      <DropdownMenuItem>Profile</DropdownMenuItem>
-                      <DropdownMenuItem>Billing</DropdownMenuItem>
+                      <DropdownMenuItem>删除</DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </div>
