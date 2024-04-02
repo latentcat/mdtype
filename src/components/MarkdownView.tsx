@@ -11,6 +11,7 @@ import { EditorView, keymap } from '@codemirror/view'
 import { defaultKeymap } from '@codemirror/commands'
 import {markdown} from "@codemirror/lang-markdown"
 import {languages} from "@codemirror/language-data"
+import {basicSetup, minimalSetup} from "codemirror";
 
 const tags = Array.from({ length: 50 }).map(
   (_, i, a) => `v1.2.0-beta.${a.length - i}`
@@ -25,13 +26,14 @@ export function MarkdownView() {
       doc: 'Hello World',
       extensions: [
         keymap.of(defaultKeymap),
+        minimalSetup,
         markdown({codeLanguages: languages}),
         EditorView.theme({
           ".cm-content": {
             padding: "24px",
             fontSize: "16px",
           },
-          "&.cm-focused .cm-content": {color: "orange"},
+          // "&.cm-focused .cm-content": {color: "orange"},
           "&.cm-focused": {outline: "none"},
         }),
       ],
