@@ -26,13 +26,13 @@ export default function Content() {
           <MarkdownView />
         </PanelWrapper>
       </ResizablePanel>
-      <ResizableHandle disabled className="opacity-0" />
+      <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
         <PanelWrapper>
           Two
         </PanelWrapper>
       </ResizablePanel>
-      <ResizableHandle disabled className="opacity-0" />
+      <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
         <PanelWrapper>
           <PreviewView />
