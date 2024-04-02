@@ -7,12 +7,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {Button} from "@/components/ui/button";
+import {Share} from "lucide-react";
 
 export function PostButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button size="sm">
+          <Share size={16} className="mr-1.5" />
           发布
         </Button>
       </DropdownMenuTrigger>
