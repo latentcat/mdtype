@@ -21,15 +21,11 @@ export function MenubarDemo() {
         <MenubarTrigger>文件</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
-            New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+            新建 <MenubarShortcut>⌘N</MenubarShortcut>
           </MenubarItem>
-          <MenubarItem>
-            New Window <MenubarShortcut>⌘N</MenubarShortcut>
-          </MenubarItem>
-          <MenubarItem disabled>New Incognito Window</MenubarItem>
-          <MenubarSeparator />
+          <MenubarItem disabled>打开</MenubarItem>
           <MenubarSub>
-            <MenubarSubTrigger>Share</MenubarSubTrigger>
+            <MenubarSubTrigger>打开最近的文档</MenubarSubTrigger>
             <MenubarSubContent>
               <MenubarItem>Email link</MenubarItem>
               <MenubarItem>Messages</MenubarItem>
@@ -38,8 +34,16 @@ export function MenubarDemo() {
           </MenubarSub>
           <MenubarSeparator />
           <MenubarItem>
-            Print... <MenubarShortcut>⌘P</MenubarShortcut>
+            导入
           </MenubarItem>
+          <MenubarSub>
+            <MenubarSubTrigger>导出</MenubarSubTrigger>
+            <MenubarSubContent>
+              <MenubarItem>Email link</MenubarItem>
+              <MenubarItem>Messages</MenubarItem>
+              <MenubarItem>Notes</MenubarItem>
+            </MenubarSubContent>
+          </MenubarSub>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
@@ -71,21 +75,19 @@ export function MenubarDemo() {
       <MenubarMenu>
         <MenubarTrigger>视图</MenubarTrigger>
         <MenubarContent>
-          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
-          <MenubarCheckboxItem checked>
+          <MenubarCheckboxItem checked>显示 CSS</MenubarCheckboxItem>
+          <MenubarCheckboxItem>
             Always Show Full URLs
           </MenubarCheckboxItem>
           <MenubarSeparator />
           <MenubarItem inset>
-            Reload <MenubarShortcut>⌘R</MenubarShortcut>
+            重新加载 <MenubarShortcut>⌘R</MenubarShortcut>
           </MenubarItem>
           <MenubarItem disabled inset>
             Force Reload <MenubarShortcut>⇧⌘R</MenubarShortcut>
           </MenubarItem>
           <MenubarSeparator />
-          <MenubarItem inset>Toggle Fullscreen</MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem inset>Hide Sidebar</MenubarItem>
+          <MenubarItem inset>切换全屏</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
