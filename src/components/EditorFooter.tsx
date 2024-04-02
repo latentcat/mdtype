@@ -1,6 +1,6 @@
 
 
-export function Footer() {
+export function EditorFooter() {
   return (
     <div className="h-6 flex items-center px-4">
       <div className="text-xs font-mono">
