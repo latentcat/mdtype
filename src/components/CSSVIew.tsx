@@ -11,7 +11,6 @@ export function CSSView() {
 
   useEffect(() => {
     const startState = createEditorState({
-      doc: "CSS",
       extensions: [],
       onChange: setCss,
     });
@@ -21,6 +20,19 @@ export function CSSView() {
         state: startState,
         parent: editor.current,
       });
+
+      fetch("/assets/examples/default.css")
+        .then((resp) => resp.text())
+        .then((text) => {
+          view.dispatch(
+            startState.update({
+              changes: {
+                from: 0,
+                insert: text,
+              },
+            })
+          );
+        });
 
       return () => {
         view.destroy();
