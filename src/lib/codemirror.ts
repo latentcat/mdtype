@@ -24,7 +24,7 @@ export function createEditorState(options?: Partial<CreateEditorStateOptions>) {
       EditorView.theme({
         ".cm-content": {
           padding: "24px",
-          fontSize: "16px",
+          fontSize: "15px",
         },
         "&.cm-focused": { outline: "none" },
       }),
