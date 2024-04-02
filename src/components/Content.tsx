@@ -6,7 +6,6 @@ import {
 import { PreviewView } from "@/components/PreviewView";
 import { MarkdownView } from "@/components/MarkdownView";
 import * as React from "react";
-import ContentView from "./ContentView";
 
 function PanelWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -26,9 +25,7 @@ export default function Content() {
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper>
-          <ContentView />
-        </PanelWrapper>
+        <PanelWrapper>Css</PanelWrapper>
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
