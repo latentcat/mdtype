@@ -19,7 +19,7 @@ export function EditorLogo() {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link href="/">
             返回首页
           </Link>
