@@ -20,3 +20,14 @@ export const htmlAtom = atom(async (get) => {
 });
 
 export const previewWrapperAtom = atom<HTMLDivElement | null>(null);
+
+// Scroll
+export const scrollSyncRefAtom = atom<{
+  scrolling: boolean;
+  previewScrollDOM: HTMLDivElement | null;
+  editorScrollDOM: HTMLElement | null;
+}>(() => ({
+  scrolling: false,
+  previewScrollDOM: null,
+  editorScrollDOM: null,
+}));
