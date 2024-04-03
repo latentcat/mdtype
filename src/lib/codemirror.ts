@@ -35,6 +35,8 @@ export function createEditorState(options?: Partial<CreateEditorStateOptions>) {
       EditorView.lineWrapping,
       EditorView.theme({
         "&": {
+        },
+        ".cm-scroller": {
           padding: "24px",
         },
         ".cm-content": {
