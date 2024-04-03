@@ -39,14 +39,14 @@ export default function Content() {
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper title="CSS">
-          <CSSView />
+        <PanelWrapper title="HTML">
+          <PreviewView />
         </PanelWrapper>
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper title="HTML">
-          <PreviewView />
+        <PanelWrapper title="CSS">
+          <CSSView />
         </PanelWrapper>
       </ResizablePanel>
     </ResizablePanelGroup>
