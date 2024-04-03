@@ -7,8 +7,8 @@ import {cn} from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "mdnice Editor",
-  description: "mdnice",
+  title: "Editor",
+  description: "mdtype Editor",
 };
 
 export default function RootLayout({

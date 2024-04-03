@@ -1,16 +1,16 @@
 import {type Metadata, Viewport} from "next";
 
 export const layoutMetadata: Metadata = {
-  metadataBase: new URL('https://mdnice.latentcat.com'),
+  metadataBase: new URL('https://mdtype.com'),
   title: {
-    template: '%s - mdnice',
+    template: '%s - mdtype',
     default:
-      'mdnice',
+      'mdtype',
   },
   description:
-    'mdnice',
+    'mdtype',
   openGraph: {
-    title: 'mdnice',
+    title: 'mdtype',
     images: encodeURI(`/og?title=${'Troy Ni'}`)
   },
 }

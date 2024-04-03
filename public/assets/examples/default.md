@@ -1,7 +1,5 @@
 # GFM
 
-[//]: # (![]&#40;https://my-wechat.mdnice.com/logo.svg&#41;)
-
 请使用 **Chrome** 浏览器。
 
 请阅读下方文本熟悉工具使用方法，本文可直接拷贝到微信中预览。
@@ -11,8 +9,6 @@
 - 支持自定义样式的 Markdown 编辑器
 - 支持微信公众号、知乎和稀土掘金
 - 欢迎扫码回复「排版」加入用户群
-
-[//]: # (![]&#40;https://my-wechat.mdnice.com/wechat.jpg&#41;)
 
 ## 2 主题
 
