@@ -1,5 +1,5 @@
 import {Container} from "@/components/Containers";
-import {MdniceLogo} from "@/components/Logos";
+import {MdtypeLogo} from "@/components/Logos";
 import {Button} from "@/components/ui/button";
 import {Ellipsis, Plus} from "lucide-react";
 
@@ -23,7 +23,7 @@ export default async function Home() {
         <div className="mt-16 sm:mt-24">
           <div className="flex flex-col">
             <div>
-              <MdniceLogo className="h-8"/>
+              <MdtypeLogo className="h-8"/>
             </div>
 
             <div className="mt-12">

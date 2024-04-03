@@ -6,7 +6,7 @@ import {HeaderToolbar} from "@/components/HeaderToolbar";
 import {DarkModeToggle} from "@/components/DarkModeToggle";
 import {Button} from "@/components/ui/button";
 import {PostButton} from "@/components/PostButton";
-import {MdniceLogo} from "@/components/Logos";
+import {MdtypeLogo} from "@/components/Logos";
 import {EditorLogo} from "@/components/EditorLogo";
 
 

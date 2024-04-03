@@ -13,7 +13,7 @@ export function QrbtfLogo(props: React.ComponentPropsWithoutRef<"svg">) {
   );
 }
 
-export function MdniceLogo(props: React.ComponentPropsWithoutRef<"svg">) {
+export function MdtypeLogo(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg viewBox="0 0 720 311" {...props}>
       <path fillRule="evenodd" clipRule="evenodd"
