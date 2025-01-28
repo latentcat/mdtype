@@ -6,13 +6,14 @@ import {
 import { PreviewView } from "@/components/PreviewView";
 import { MarkdownView } from "./MarkdownView";
 import * as React from "react";
-import { CSSView } from "@/components/CSSView";
+import { CSSView } from "@/components/css-view/CSSView";
+import { CSSSelect } from "./css-view/css-select";
 
 function PanelWrapper({
   children,
   title,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title: string;
 }) {
   return (
@@ -46,7 +47,17 @@ export default function Content() {
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
         <PanelWrapper title="CSS">
-          <CSSView />
+          <div className="flex flex-col h-full">
+            <div className="shrink-0">
+              <CSSSelect />
+            </div>
+
+            <div className="grow relative">
+              <div className="absolute top-0 left-0 w-full h-full">
+                <CSSView />
+              </div>
+            </div>
+          </div>
         </PanelWrapper>
       </ResizablePanel>
     </ResizablePanelGroup>
