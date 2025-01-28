@@ -2,7 +2,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable";
+} from "@/components/custom-ui/resizable";
 import { PreviewView } from "@/components/PreviewView";
 import { MarkdownView } from "./MarkdownView";
 import * as React from "react";
@@ -46,19 +46,21 @@ export default function Content() {
       </ResizablePanel>
       <ResizableHandle disabled={false} withHandle />
       <ResizablePanel className="relative">
-        <PanelWrapper title="CSS">
-          <div className="flex flex-col h-full">
-            <div className="shrink-0">
-              <CSSSelect />
+        <div className="absolute top-0 left-0 w-full h-full px-[2px]">
+          <div className="w-full h-full bg-panel-bg rounded-lg flex flex-col">
+            <div className="shrink-0 p-1 flex items-center justify-center">
+              <div className="text-xs text-foreground/50">
+                <CSSSelect />
+              </div>
             </div>
-
             <div className="grow relative">
               <div className="absolute top-0 left-0 w-full h-full">
+
                 <CSSView />
               </div>
             </div>
           </div>
-        </PanelWrapper>
+        </div>
       </ResizablePanel>
     </ResizablePanelGroup>
   );

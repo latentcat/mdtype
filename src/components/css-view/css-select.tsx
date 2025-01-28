@@ -2,7 +2,7 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronsUpDown } from "lucide-react"
+import { Check, ChevronDown, ChevronsDown, ChevronsUpDown } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -50,17 +50,15 @@ export function CSSSelect() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
+        <div
           aria-expanded={open}
-          className="w-full justify-between"
+          className="w-full items-center flex cursor-pointer"
         >
-          {value
+          CSS - {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
-          <ChevronsUpDown className="opacity-50" />
-        </Button>
+            : "Select CSS..."}
+          <ChevronDown className="w-4 h-4 ml-2" />
+        </div>
       </PopoverTrigger>
       <PopoverContent className="w-full p-0">
         <Command>

@@ -1,7 +1,7 @@
-import {Container} from "@/components/Containers";
-import {MdtypeLogo} from "@/components/Logos";
-import {Button} from "@/components/ui/button";
-import {Ellipsis, Plus} from "lucide-react";
+import { Container } from "@/components/Containers";
+import { MdtypeLogo } from "@/components/Logos";
+import { Button } from "@/components/ui/button";
+import { Ellipsis, Plus } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -23,7 +23,7 @@ export default async function Home() {
         <div className="mt-16 sm:mt-24">
           <div className="flex flex-col">
             <div>
-              <MdtypeLogo className="h-8"/>
+              <MdtypeLogo className="h-8" />
             </div>
 
             <div className="mt-12">
@@ -34,7 +34,7 @@ export default async function Home() {
                 </h2>
                 <div>
                   <Button>
-                    <Plus size={20} className="mr-1.5"/>
+                    <Plus size={20} className="mr-1.5" />
                     新建
                   </Button>
                 </div>
@@ -50,7 +50,7 @@ export default async function Home() {
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="icon" className="h-6">
-                        <Ellipsis size={20}/>
+                        <Ellipsis size={20} />
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">

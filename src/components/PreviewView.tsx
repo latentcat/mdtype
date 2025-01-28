@@ -44,6 +44,12 @@ export function PreviewView() {
       <div className="w-full h-full flex flex-col p-3 _bg-border/30 items-center">
         <div className="w-full h-full _rounded-xl _shadow-xl _bg-background _border max-w-lg">
           <div ref={setPreviewWrapper} className="p-5">
+            <h1 className="text-[22px] font-semibold mt-6 mb-[14px]">
+              十万只鸟儿在 GPU 上飞行——一次关于算法与自然的探索
+            </h1>
+            <div className="text-[15px] opacity-30 mb-6">
+              倪豪
+            </div>
             <section id="nice" dangerouslySetInnerHTML={{ __html: html }} />
             <style dangerouslySetInnerHTML={{ __html: css }} />
           </div>
